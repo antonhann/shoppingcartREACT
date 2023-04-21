@@ -1,0 +1,7 @@
+.shop{
+  display: grid;
+  width: 100vw;
+  place-items: center;
+  column-gap: 30px;
+  grid-template-columns: 200px 200px 200px 200px;
+}

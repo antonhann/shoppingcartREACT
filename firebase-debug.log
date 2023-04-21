@@ -1,0 +1,32 @@
+[debug] [2023-03-22T04:52:44.461Z] ----------------------------------------------------------------------
+[debug] [2023-03-22T04:52:44.463Z] Command:       /home/antonhan/.nvm/versions/node/v18.12.0/bin/node /home/antonhan/.nvm/versions/node/v18.12.0/bin/firebase serve --only hosting
+[debug] [2023-03-22T04:52:44.463Z] CLI Version:   11.25.1
+[debug] [2023-03-22T04:52:44.463Z] Platform:      linux
+[debug] [2023-03-22T04:52:44.463Z] Node Version:  v18.12.0
+[debug] [2023-03-22T04:52:44.464Z] Time:          Wed Mar 22 2023 00:52:44 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-03-22T04:52:44.464Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-22T04:52:44.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-22T04:52:44.543Z] > authorizing via signed-in user (antonha016@gmail.com)
+[debug] [2023-03-22T04:52:44.543Z] [iam] checking project shopping-cart-2d276 for permissions ["firebase.projects.get"]
+[debug] [2023-03-22T04:52:44.544Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopping-cart-2d276:testIamPermissions [none]
+[debug] [2023-03-22T04:52:44.544Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopping-cart-2d276:testIamPermissions x-goog-quota-user=projects/shopping-cart-2d276
+[debug] [2023-03-22T04:52:44.545Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopping-cart-2d276:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-22T04:52:44.768Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopping-cart-2d276:testIamPermissions 200
+[debug] [2023-03-22T04:52:44.768Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopping-cart-2d276:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-22T04:52:44.769Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276 [none]
+[debug] [2023-03-22T04:52:45.076Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276 200
+[debug] [2023-03-22T04:52:45.077Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276 {"projectId":"shopping-cart-2d276","projectNumber":"928860888462","displayName":"shopping cart","name":"projects/shopping-cart-2d276","resources":{"hostingSite":"shopping-cart-2d276"},"state":"ACTIVE","etag":"1_bd633070-29b3-4291-995c-f346db70af48"}
+[debug] [2023-03-22T04:52:45.079Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/shopping-cart-2d276/sites 
+[debug] [2023-03-22T04:52:45.903Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/shopping-cart-2d276/sites 200
+[debug] [2023-03-22T04:52:45.904Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/shopping-cart-2d276/sites {"sites":[{"name":"projects/shopping-cart-2d276/sites/shopping-cart-2d276","defaultUrl":"https://shopping-cart-2d276.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-03-22T04:52:45.904Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276/webApps/-/config [none]
+[debug] [2023-03-22T04:52:46.342Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276/webApps/-/config 200
+[debug] [2023-03-22T04:52:46.342Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276/webApps/-/config {"projectId":"shopping-cart-2d276","appId":"1:928860888462:web:1a2618749e10e00f20d8df","storageBucket":"shopping-cart-2d276.appspot.com","apiKey":"AIzaSyB335LY3JSIdvTWmmYO82Bc_J7JWRgZGfU","authDomain":"shopping-cart-2d276.firebaseapp.com","messagingSenderId":"928860888462","measurementId":"G-FMQRG5HTK5"}
+[debug] [2023-03-22T04:52:46.346Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276 [none]
+[debug] [2023-03-22T04:52:46.623Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276 200
+[debug] [2023-03-22T04:52:46.623Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopping-cart-2d276 {"projectId":"shopping-cart-2d276","projectNumber":"928860888462","displayName":"shopping cart","name":"projects/shopping-cart-2d276","resources":{"hostingSite":"shopping-cart-2d276"},"state":"ACTIVE","etag":"1_bd633070-29b3-4291-995c-f346db70af48"}
+[debug] [2023-03-22T04:52:46.623Z] Specified "public" directory "public" does not exist; Deploy to Hosting site "shopping-cart-2d276" may fail or be empty.
+[info] i  hosting[shopping-cart-2d276]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[shopping-cart-2d276]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [22/Mar/2023:04:52:49 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Mar/2023:04:52:49 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36\""}}
